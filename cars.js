@@ -146,6 +146,6 @@ for (let car of cars) {
     features.appendChild(doors);
 
     const speed = document.createElement("li");
-    speed.textContent = "0 - 100km/h: " + car.zeroToHundred;
+    speed.textContent = "0 - 100km/h: " + car.zeroToHundred + " seconds";
     features.appendChild(speed);
 }
