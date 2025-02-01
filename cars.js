@@ -96,7 +96,7 @@ const cars = [
         make: "Aspark",
         model: "Owl",
         zeroToHundred: 1.7,
-        image: ""
+        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/owl.png"
     },
     {
         wheels: 4,
@@ -118,8 +118,6 @@ for (let car of cars) {
     // carImage.classList.add("bg-image");
 
     card.style.backgroundImage = `url(${car.image})`;
-
-    
 
     const make = document.createElement("h2");
     make.textContent = car.make;

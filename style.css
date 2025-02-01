@@ -22,17 +22,17 @@
     align-items: center;
     padding: 3rem;
     max-width: 400px;
-    max-height: 600px;
+    height: 475px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-position: center; 
+    background-position: bottom; 
     background-repeat: no-repeat;
     background-size: 300px;
-   
 }
 
-.bg-image {
-    opacity: 50%;
-}
+/* .card::before {
+    content: ""; 
+    opacity: 0.5;
+} */
 
 .card:hover {
     transform: scale(1.1); /* Slightly enlarge the card */
