@@ -6,7 +6,7 @@ const cars = [
         make: "Tesla",
         model: "Model S Plaid",
         zeroToHundred: 2.1,
-        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/model_S_plaid.png"
+        image: "./car_images/model_S_plaid.png"
     },
     {
         wheels: 4,
@@ -15,7 +15,7 @@ const cars = [
         make: "Rimac",
         model: "Nevera",
         zeroToHundred: 1.9,
-        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/Rimac-Nevera.png"
+        image: "./car_images/Rimac-Nevera.png"
     },
     {
         wheels: 4,
@@ -24,7 +24,7 @@ const cars = [
         make: "Bugatti",
         model: "Chiron Super Sport",
         zeroToHundred: 2.3,
-        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/bugatti.png"
+        image: "./car_images/bugatti.png"
     },
     {
         wheels: 4,
@@ -33,7 +33,7 @@ const cars = [
         make: "Porsche",
         model: "Taycan Turbo S",
         zeroToHundred: 2.8,
-        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/Porsche-Taycan-Transparent-Free-PNG.png"
+        image: "./car_images/Porsche-Taycan-Transparent-Free-PNG.png"
     },
     {
         wheels: 4,
@@ -42,7 +42,7 @@ const cars = [
         make: "Lamborghini",
         model: "Huracán Evo",
         zeroToHundred: 2.9,
-        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/lambo.png"
+        image: "./car_images/lambo.png"
     },
     {
         wheels: 4,
@@ -51,7 +51,7 @@ const cars = [
         make: "Ferrari",
         model: "SF90 Stradale",
         zeroToHundred: 2.5,
-        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/Ferrari-SF90-Stradale-PNG-Free-Download.png"
+        image: "./car_images/Ferrari-SF90-Stradale-PNG-Free-Download.png"
     },
     {
         wheels: 4,
@@ -60,7 +60,7 @@ const cars = [
         make: "Lucid",
         model: "Air Sapphire",
         zeroToHundred: 1.89,
-        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/Lucid-Sapphire.png"
+        image: "./car_images/Lucid-Sapphire.png"
     },
     {
         wheels: 4,
@@ -69,7 +69,7 @@ const cars = [
         make: "McLaren",
         model: "765LT",
         zeroToHundred: 2.8,
-        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/PW-2.png"
+        image: "./car_images/PW-2.png"
     },
     {
         wheels: 4,
@@ -78,7 +78,7 @@ const cars = [
         make: "Tesla",
         model: "Model X Plaid",
         zeroToHundred: 2.5,
-        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/Tesla-Model-X-PNG-Transparent-Image.png"
+        image: "./car_images/Tesla-Model-X-PNG-Transparent-Image.png"
     },
     {
         wheels: 4,
@@ -87,7 +87,7 @@ const cars = [
         make: "Nissan",
         model: "GT-R Nismo",
         zeroToHundred: 2.7,
-        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/gtr.png"
+        image: "./car_images/gtr.png"
     },
     {
         wheels: 4,
@@ -96,7 +96,7 @@ const cars = [
         make: "Aspark",
         model: "Owl",
         zeroToHundred: 1.7,
-        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/owl.png"
+        image: "./car_images/owl.png"
     },
     {
         wheels: 4,
@@ -105,7 +105,7 @@ const cars = [
         make: "Chevrolet",
         model: "Camaro ZL1",
         zeroToHundred: 3.5,
-        image: "/Users/dylansmoo/projects/lessons/Cars/car_images/Chevrolet-Camaro.png"
+        image: "./car_images/Chevrolet-Camaro.png"
     }
 ];
 
@@ -117,7 +117,8 @@ for (let car of cars) {
     // const carImage = car.image;
     // carImage.classList.add("bg-image");
 
-    card.style.backgroundImage = `url(${car.image})`;
+    // card.style.backgroundImage = `url(${car.image})`;
+    card.style.setProperty("--bg-image", `url(${car.image}`)
 
     const make = document.createElement("h2");
     make.textContent = car.make;

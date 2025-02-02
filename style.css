@@ -12,7 +12,7 @@
 }
 
 .card {
-    flex: 0 0 calc(50% - 50px); /* Each item takes ~1/6th of the row minus the gap */
+    flex: 0 0 calc(50% - 50px); 
     box-sizing: border-box;
     border: 1px solid rgb(71, 71, 71);
     border-radius: 5px;
@@ -24,15 +24,25 @@
     max-width: 400px;
     height: 475px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-position: bottom; 
-    background-repeat: no-repeat;
-    background-size: 300px;
+    /* background-position: bottom;  */
+    background: none;
+    position: relative;
 }
 
-/* .card::before {
+.card::after {
     content: ""; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-image: var(--bg-image);
     opacity: 0.5;
-} */
+    z-index: -1;
+}
 
 .card:hover {
     transform: scale(1.1); /* Slightly enlarge the card */
